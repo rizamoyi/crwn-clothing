@@ -17,7 +17,8 @@ const Shop = () => {
       dispatch(setCategories(categoriesArray));
     };
     getCategoriesMap();
-  }, []);
+    // added only to silence warning but not neccesarry
+  }, [dispatch]);
 
   return (
     <Routes>
