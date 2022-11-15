@@ -18,7 +18,11 @@ export const Group = styled.div`
   }
 `;
 
-export const FormInputLabel = styled.label`
+type FormImputLabelProps = {
+  shrink?: boolean;
+};
+
+export const FormInputLabel = styled.label<FormImputLabelProps>`
   color: ${subColor};
   font-size: 16px;
   font-weight: normal;
